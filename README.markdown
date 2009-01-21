@@ -1,4 +1,4 @@
-MarshalledAttributes
+Marshalled Attributes
 ====================
 
 MarshalledAttributes allows you to marshal data to attributes in your
@@ -37,3 +37,18 @@ objects in your database.
 For example:
 
     Taco.create!(:salsa => [ 'tomatoes', 'onions' ], :guacamole => [ 'avocado', 'jalapeno' ])
+
+
+Performance
+-----------
+
+According to one benchmark, [YAML is approximately 35 times slower at serialization
+and 6 times slower at deserialization than Marshal]
+(http://significantbits.wordpress.com/2008/01/29/yaml-vs-marshal-performance/).
+Benchmarks using this plugin compared to Rails' native serialization using YAML
+have not yet been performed.
+
+Credits
+-------
+
+Thanks to Geoff Ereth for giving me the idea to write this plugin.
