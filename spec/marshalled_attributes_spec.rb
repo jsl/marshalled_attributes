@@ -15,12 +15,13 @@ ActiveRecord::Base.silence do
   ActiveRecord::Schema.define do
     create_table :tacos do |table|
       table.binary :salsa
+      table.binary :guacamole
     end
   end
 end
 
 class Taco < ActiveRecord::Base
-  marshalled_attribute :salsa
+  marshal :salsa, :guacamole
 end
 
 describe MarshalledAttributes do
