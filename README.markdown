@@ -11,9 +11,9 @@ Create the attributes that you want to use in a migration as binary columns.
 
 For example,
 
-`create_table :tacos do |table|
-  table.binary :salsa
-end`
+    create_table :tacos do |table|
+        table.binary :salsa
+    end
 
 Then, in the ActiveRecord::Base class, just do:
 
