@@ -11,13 +11,13 @@ Create the attributes that you want to use in a migration as binary columns.
 
 For example,
 
-create_table :tacos do |table|
+`create_table :tacos do |table|
   table.binary :salsa
-end
+end`
 
 Then, in the ActiveRecord::Base class, just do:
 
-marshal :salsa
+`marshal :salsa`
 
 You can then put ruby objects which will be Marshal loaded and dumped automatically
 into your table.
