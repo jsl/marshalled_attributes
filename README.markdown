@@ -22,14 +22,18 @@ For example,
 
     create_table :tacos do |table|
         table.binary :salsa
-        table.binary :enchilada
+        table.binary :guacamole
     end
 
 Finally, in the ActiveRecord::Base class, use the same syntax that you would
-have with the Rails YAML serialization scheme, replacing :serialize with :marshal:
+have with the Rails YAML serialization scheme, replacing ':serialize with ':marshal':
 
-`marshal :salsa, :enchilada`
+    marshal :salsa, :guacamole
 
-The attributes :salsa and :enchilada will be automatically Marshal loaded and
+The attributes :salsa and :guacamole will be automatically Marshal loaded and
 dumped as needed, allowing you to store Arrays and other Marshal-serializable
 objects in your database.
+
+For example:
+
+    Taco.create!(:salsa => [ 'tomatoes', 'onions' ], :guacamole => [ 'avocado', 'jalapeno' ])
