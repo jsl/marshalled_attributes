@@ -42,9 +42,8 @@ For example:
 Performance
 -----------
 
-According to one benchmark, [YAML is approximately 35 times slower at serialization
-and 6 times slower at deserialization than Marshal]
-(http://significantbits.wordpress.com/2008/01/29/yaml-vs-marshal-performance/).
+According to one benchmark, [YAML is approximately 35 times slower at
+serialization and 6 times slower at deserialization than Marshal][1].
 Benchmarks using this plugin compared to Rails' native serialization using YAML
 have not yet been performed.
 
@@ -52,3 +51,8 @@ Credits
 -------
 
 Thanks to Geoff Ereth for giving me the idea to write this plugin.
+
+References
+----------
+
+[1]: http://significantbits.wordpress.com/2008/01/29/yaml-vs-marshal-performance/
