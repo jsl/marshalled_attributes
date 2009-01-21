@@ -7,15 +7,14 @@ Rails.
 
 Reasons that you may want to do this include the fact that Marshal serialization
 is faster than YAML serialization, and because Ruby serialization using Marshal
-may allow a wider range of objects to be serialized than by using YAML
-serialization.
+allows a wider range of objects to be serialized than by using YAML serialization.
 
 Usage
 -----
 
 Install the plugin in your Rails app with:
 
-    `./script/plugin install git://github.com/jsl/marshalled_attributes.git`
+    ./script/plugin install git://github.com/jsl/marshalled_attributes.git
 
 Then, create the attributes in your migration as binary columns.
 
