@@ -52,7 +52,4 @@ Credits
 
 Thanks to Geoff Ereth for giving me the idea to write this plugin.
 
-References
-----------
-
 [1]: http://significantbits.wordpress.com/2008/01/29/yaml-vs-marshal-performance/
