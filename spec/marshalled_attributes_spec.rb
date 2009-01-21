@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'activerecord'
-require 'ostruct'
 
 require File.join(File.dirname(__FILE__), %w[.. init])
 
