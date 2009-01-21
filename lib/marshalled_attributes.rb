@@ -6,7 +6,7 @@ module MarshalledAttributes
 
   module SingletonMethods
 
-    def marshalled_attribute(*args)
+    def marshal(*args)
       args.each do |arg|
         define_method arg do
           Marshal.load(self[arg])
