@@ -2,7 +2,8 @@ MarshalledAttributes
 ====================
 
 MarshalledAttributes allows you to marshal data to attributes in your
-ORM database.
+ActiveRecord database, instead of the default YAML serialization supported by
+Rails.
 
 Usage
 -----
